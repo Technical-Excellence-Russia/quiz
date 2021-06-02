@@ -5,8 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "lint": "npx markdownlint-cli ./*.md --fix",
-    "spell": "npx yaspeller -l ru ./*.md",
+    "lint": "npx markdownlint-cli ./**/*.md --fix",
+    "spell": "npx yaspeller -l ru ./**/*.md",
     "check": "npm run lint && npm run spell",
     "test": "npx jest",
     "start": "node index.js"
