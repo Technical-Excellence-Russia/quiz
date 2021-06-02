@@ -1,0 +1,30 @@
+{
+  "name": "technical-excellence-russia-quiz",
+  "version": "1.0.0",
+  "description": "Technical Excellence Quiz",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "lint": "npx markdownlint-cli ./*.md --fix",
+    "spell": "npx yaspeller -l ru ./*.md",
+    "check": "npm run lint && npm run spell",
+    "test": "npx jest",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Technical-Excellence-Russia/quiz.git"
+  },
+  "keywords": [
+    "quiz",
+    "technical",
+    "excellence"
+  ],
+  "author": "Technical Excellence Russia",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Technical-Excellence-Russia/quiz/issues"
+  },
+  "homepage": "https://github.com/Technical-Excellence-Russia/quiz#readme",
+  "devDependencies": {}
+}
