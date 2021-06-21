@@ -12,7 +12,7 @@ SOLID, design patterns, clean code
 
 ### Верный ответ(ы)
 
-* Инверсия Контроля (InversionOfControl)
+* Инверсия Управления (InversionOfControl)
 
 ### Другие ответ(ы)
 
