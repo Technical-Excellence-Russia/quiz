@@ -22,4 +22,4 @@ Design, code quality, legacy code
 
 ## Объяснение ответа
 
-Улучшить читаемость и упростить дальнейшее внесение изменений. Подробнее в [wiki](https://technical-excellence.ru/wiki/Refactoring).
+Улучшить читаемость и упростить дальнейшее внесение изменений. Подробнее в [wiki](https://technical-excellence.ru/wiki/Refactoring). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

@@ -22,4 +22,4 @@ ddd, clean architecture, design patterns
 
 ## Объяснение ответа
 
-Позволяет большинство решений о реализации принять в последний момент и имеет слабую связанность (low coupling) и высокое зацепление (high cohesion). Подробнее в [wiki](https://technical-excellence.ru/wiki/).
+Позволяет большинство решений о реализации принять в последний момент и имеет слабую связанность (low coupling) и высокое зацепление (high cohesion). Подробнее в [wiki](https://technical-excellence.ru/wiki/). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

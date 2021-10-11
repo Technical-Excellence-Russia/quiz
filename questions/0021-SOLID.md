@@ -22,4 +22,4 @@ SOLID, design patterns, clean code
 
 ## Объяснение ответа
 
-SOLID - набор и из 5 принципов проектирования, получивший название по первым буквам этих принципов. Принципа внедрения интерфейсов (The Interface Injection Principle) в нём нет. Подробнее в [wiki](https://technical-excellence.ru/wiki/SOLID).
+SOLID - набор и из 5 принципов проектирования, получивший название по первым буквам этих принципов. Принципа внедрения интерфейсов (The Interface Injection Principle) в нём нет. Подробнее в [wiki](https://technical-excellence.ru/wiki/SOLID). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
