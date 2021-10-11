@@ -1,8 +1,8 @@
+const os = require("os");
 const fs = require("./lib/fs");
 const QuestionMapper = require("./lib/question-mapper");
 
-const questionMapper = new QuestionMapper("\r\n");
-
+const questionMapper = new QuestionMapper(os.EOL);
 
 const questions = fs.getListOfMDFiles(__dirname + "/questions/")
     .map((fileName) => fs.readFile(__dirname + "/questions/" + fileName))
