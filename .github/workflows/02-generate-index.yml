@@ -21,6 +21,19 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
+      - name: Generate
+        run: |
+          npm i
+          npm test
+          npm start
+        env:
+          CI: true
+
+      - name: Lint markdown & spellcheck
+        run: npm run check
+        env:
+          CI: true
+
       - name: Commit files
         run: |
           git config --local user.email "quiz[bot]@users.noreply.github.com"
