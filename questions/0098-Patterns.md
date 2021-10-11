@@ -22,4 +22,4 @@ SOLID, design patterns, clean code
 
 ## Объяснение ответа
 
-Шаблон проектирования (Design Pattern). Подробнее в [wiki](https://technical-excellence.ru/wiki/DesignPatterns).
+Шаблон проектирования (Design Pattern). Подробнее в [wiki](https://technical-excellence.ru/wiki/DesignPatterns). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

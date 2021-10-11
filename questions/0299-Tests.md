@@ -22,4 +22,4 @@ Design, code quality, tests
 
 ## Объяснение ответа
 
-Пирамида тестирования. Подробнее в [wiki](https://technical-excellence.ru/wiki/TestPyramid).
+Пирамида тестирования. Подробнее в [wiki](https://technical-excellence.ru/wiki/TestPyramid). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

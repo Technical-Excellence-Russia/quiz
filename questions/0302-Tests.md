@@ -23,4 +23,4 @@ Design, code quality, tests
 
 ## Объяснение ответа
 
-Все ответы верные. Подробнее в [wiki](https://technical-excellence.ru/wiki/UnitTest).
+Все ответы верные. Подробнее в [wiki](https://technical-excellence.ru/wiki/UnitTest). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

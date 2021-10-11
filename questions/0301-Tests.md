@@ -22,4 +22,4 @@ Design, code quality, tests
 
 ## Объяснение ответа
 
-ААА-шаблон состоит это Arrange-Act-Assert. Подробнее в [wiki](https://technical-excellence.ru/wiki/UnitTest).
+ААА-шаблон состоит это Arrange-Act-Assert. Подробнее в [wiki](https://technical-excellence.ru/wiki/UnitTest). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

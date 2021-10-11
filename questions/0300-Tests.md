@@ -22,4 +22,4 @@ Design, code quality, tests
 
 ## Объяснение ответа
 
-Исследовательское. Подробнее в [wiki](https://technical-excellence.ru/wiki/TestPyramid).
+Исследовательское. Подробнее в [wiki](https://technical-excellence.ru/wiki/TestPyramid). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

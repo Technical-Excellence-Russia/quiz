@@ -22,4 +22,4 @@ SOLID, design patterns, clean code
 
 ## Объяснение ответа
 
-Одиночка (Singleton) согласно его определению. Подробнее в [wiki](https://technical-excellence.ru/wiki/InversionOfControl).
+Одиночка (Singleton) согласно его определению. Подробнее в [wiki](https://technical-excellence.ru/wiki/InversionOfControl). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).

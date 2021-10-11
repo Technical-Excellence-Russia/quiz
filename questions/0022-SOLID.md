@@ -22,4 +22,4 @@ SOLID, design patterns, clean code
 
 ## Объяснение ответа
 
-Принцип разделения интерфейсов (Interface Segregation Principle). Подробнее в [wiki](https://technical-excellence.ru/wiki/InterfaceSegregationPrinciple).
+Принцип разделения интерфейсов (Interface Segregation Principle). Подробнее в [wiki](https://technical-excellence.ru/wiki/InterfaceSegregationPrinciple). Остались вопросы? Задавай в [нашем чате](https://t.me/technicalexcellenceru).
