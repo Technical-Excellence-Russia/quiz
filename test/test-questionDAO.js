@@ -19,7 +19,7 @@ describe("QuestionMapper should", () => {
             {text: "Да, так и есть", correct: true}, {text: "И так может быть", correct: true},
             {text: "Нет", correct: false}, {text: "И нет", correct: false}
         ]);
-        expect(result.description).toEqual("Не знаю(");
+        expect(result.description).toEqual("<p>Не знаю(</p>");
     })
 
 });
