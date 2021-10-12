@@ -25,12 +25,8 @@ jobs:
         run: |
           npm i
           npm test
-          npm start
-        env:
-          CI: true
-
-      - name: Lint markdown & spellcheck
-        run: npm run check
+          npm generate
+          npm run prod
         env:
           CI: true
 
