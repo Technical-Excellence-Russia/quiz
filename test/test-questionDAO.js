@@ -15,8 +15,10 @@ describe("QuestionMapper should", () => {
 
         expect(result.text).toEqual("Простой вопрос");
         expect(result.tags).toEqual(["design", "code quality", "legacy code"]);
-        expect(result.answers.correct).toEqual(["Да, так и есть", "И так может быть"]);
-        expect(result.answers.incorrect).toEqual(["Нет", "И нет"]);
+        expect(result.answers).toEqual([
+            {text: "Да, так и есть", correct: true}, {text: "И так может быть", correct: true},
+            {text: "Нет", correct: false}, {text: "И нет", correct: false}
+        ]);
         expect(result.description).toEqual("Не знаю(");
     })
 
