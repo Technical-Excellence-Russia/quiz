@@ -11,8 +11,9 @@ describe("QuestionMapper should", () => {
             + "### Другие ответ(ы)\n\n* Нет\n* И нет\n\n"
             + "## Объяснение ответа\n\nНе знаю(\n";
 
-        const result = mapper.map(fileContent);
+        const result = mapper.map("0001-TDD", fileContent);
 
+        expect(result.url).toEqual("0001-TDD");
         expect(result.text).toEqual("Простой вопрос");
         expect(result.tags).toEqual(["design", "code quality", "legacy code"]);
         expect(result.answers).toEqual([
