@@ -5,10 +5,30 @@ $font-color: #d3d3d3;
 $border-color: #939393;
 $background-color: #2b2b2b;
 
-html, body, .container {
+html, body, {
   color: $font-color;
   background: $background-color;
   font-family: "Lucida Console", monospace;
+
+  @media (min-width: 240px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 400px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1000px) {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 800px;
+  }
 
   code {
     color: $font-color;

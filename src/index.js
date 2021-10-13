@@ -28,6 +28,11 @@ new Vue({
 			window.location.href = root;
 		},
 		openAnswer: function () {
+			this.question.answers = this.question.answers.map((answer) => {
+				answer.class = "row mt-2 border " + (answer.correct ? "border-success" : "border-danger");
+				return answer;
+			})
+
 			const isCorrect = this.question.answers.filter((answer) => answer.correct !== (answer.selected || false)).length === 0;
 			this.answer = isCorrect ? "Правильно! " : " Не верно ;( " + this.question.description;
 			this.isAnswerOpen = !this.isAnswerOpen;
@@ -36,7 +41,9 @@ new Vue({
 			this.isAnswerOpen = false;
 			let q = question.getQuestion();
 			this.question = q;
-			this.question.subject = q.tags.join(", ");
+			this.question.answers = this.question.answers.sort(() => Math.random() - 0.5);
+
+
 			/*			let q = question.getQuestion(this.defaultQuestion) || {
                             url: "",
                             subject: "Такой темы еще нет:(",

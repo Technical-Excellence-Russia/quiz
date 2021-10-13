@@ -11492,22 +11492,50 @@ textarea.form-control-lg {
     }
 }
 
-html, body, .container {
+html, body {
     color: #d3d3d3;
     background: #2b2b2b;
     font-family: "Lucida Console", monospace
 }
 
-html code, body code, .container code {
+@media (min-width: 240px) {
+    html, body {
+        font-size: 12px
+    }
+}
+
+@media (min-width: 400px) {
+    html, body {
+        font-size: 14px
+    }
+}
+
+@media (min-width: 768px) {
+    html, body {
+        font-size: 16px
+    }
+}
+
+@media (min-width: 1000px) {
+    html, body {
+        font-size: 18px
+    }
+}
+
+html .container, body .container {
+    max-width: 800px
+}
+
+html code, body code {
     color: #d3d3d3
 }
 
-html table th, html td, body table th, body td, .container table th, .container td {
+html table th, html td, body table th, body td {
     border: 1px solid #939393;
     padding: 1px 1px 1px 1px
 }
 
-html .copyright, body .copyright, .container .copyright {
+html .copyright, body .copyright {
     font-size: 8pt
 }
 
