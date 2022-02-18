@@ -8,7 +8,8 @@ export default function Answer(props) {
 	return (
 		<div className={className}>
 			<div className="col text-left form-check">
-				<input id={props.index} type="checkbox" className="form-check-input"/>
+				<input id={props.index} type="checkbox" className="form-check-input" checked={props.answer.checked || false}
+					   onChange={(event) => props.onChange(event.target.checked)}/>
 				<label htmlFor={props.index} className="form-check-label">{props.answer.text}</label>
 			</div>
 		</div>
@@ -18,5 +19,6 @@ export default function Answer(props) {
 Answer.propTypes = {
 	index: PropTypes.string.isRequired,
 	answer: PropTypes.object.isRequired,
-	isOpen: PropTypes.bool.isRequired
+	isOpen: PropTypes.bool.isRequired,
+	onChange: PropTypes.func.isRequired
 }
