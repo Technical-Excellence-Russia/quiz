@@ -38,26 +38,26 @@ export default function App(props) {
 	}
 
 	const showAnswer = () => setState({
-			...state,
-			isAnswerOpen: true
-		}
+		...state,
+		isAnswerOpen: true
+	}
 	)
 
 	const nextAnswer = () => {
 		state.answerIndex = state.answerIndex + (isAnswersCorrect() ? 1 : 0)
 		if (state.questionIndex === total) {
 			setState({
-					...state,
-					isResultOpen: true
-				}
+				...state,
+				isResultOpen: true
+			}
 			)
 		} else {
 			setState({
-					...state,
-					questionIndex: state.questionIndex + 1,
-					isAnswerOpen: false,
-					question: nextQuestion()
-				}
+				...state,
+				questionIndex: state.questionIndex + 1,
+				isAnswerOpen: false,
+				question: nextQuestion()
+			}
 			)
 		}
 	}
@@ -67,10 +67,10 @@ export default function App(props) {
 	const goToGroup = () => window.open("https://t.me/technicalexcellenceru", "blank")
 
 	const answers = state.question.answers.map((answer, index) => (
-			<Answer key={index.toString()} index={index.toString()} answer={answer}
-					isOpen={state.isAnswerOpen}
-					onChange={(value) => putCheck(index, value)}/>
-		)
+		<Answer key={index.toString()} index={index.toString()} answer={answer}
+			isOpen={state.isAnswerOpen}
+			onChange={(value) => putCheck(index, value)}/>
+	)
 	)
 
 	const answerTag = (
