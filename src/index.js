@@ -15,7 +15,7 @@ const currentYear = new Date().getFullYear()
 ReactDOM.render(
 	<div className="container">
 		<div className="row">
-			<div className="col-sm-12 text-center">
+			<div className="co m-3 text-center">
 				<h2 className="text-center">Technical Excellence Quiz</h2>
 			</div>
 		</div>

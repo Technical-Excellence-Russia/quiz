@@ -55,7 +55,6 @@ export default function App(props) {
 			setState({
 					...state,
 					questionIndex: state.questionIndex + 1,
-					answerIndex: state.answerIndex + (isAnswersCorrect() ? 1 : 0),
 					isAnswerOpen: false,
 					question: nextQuestion()
 				}
