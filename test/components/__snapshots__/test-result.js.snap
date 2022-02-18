@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Result should equal to snapshot 1`] = `
+Array [
+  <div
+    className="row"
+  >
+    <div
+      className="col m-2 p-2 border-top border-light"
+    >
+      Ты ответил правильно на 
+      5
+       из 
+      5
+      .
+      <br />
+      <br />
+      А ещё у нас есть группа практиков;)
+    </div>
+  </div>,
+  <div
+    className="row"
+  >
+    <div
+      className="col m-2 p-2 border-top border-light text-center"
+    >
+      <button
+        className="btn me-2 btn-primary"
+        onClick={[Function]}
+        type="button"
+      >
+        В группу
+      </button>
+      <button
+        className="btn ms-2 btn-secondary"
+        onClick={[Function]}
+        type="button"
+      >
+        Ещё раз
+      </button>
+    </div>
+  </div>,
+]
+`;

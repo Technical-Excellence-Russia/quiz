@@ -2,7 +2,7 @@ const Question = require("../lib/question")
 
 describe("Question should", () => {
 
-	const questions = [new Object({}), new Object({})]
+	const questions = [{answers: []}, {answers: []}]
 
 	const question = new Question(questions)
 

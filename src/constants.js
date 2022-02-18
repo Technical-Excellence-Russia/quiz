@@ -1,0 +1,5 @@
+export const INIT = "INIT"
+export const GO_TO_GROUP = "GO_TO_GROUP"
+export const NEXT_QUESTION = "NEXT_QUESTION"
+export const SET_CHECK = "SET_CHECK"
+export const TOGGLE_ANSWER = "SHOW_ANSWER"
