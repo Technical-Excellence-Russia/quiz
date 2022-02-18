@@ -15,54 +15,54 @@ export default function ReducerFactory(window, questionFactory) {
 
 	return function Reducer(state, action) {
 		switch (action.type) {
-			case INIT: {
-				return initialState
-			}
+		case INIT: {
+			return initialState
+		}
 
-			case SET_CHECK: {
-				const answers = state.question.answers
-				answers[action.index].checked = action.value
+		case SET_CHECK: {
+			const answers = state.question.answers
+			answers[action.index].checked = action.value
+			return {
+				...state,
+				question: {
+					...state.question,
+					answers: answers
+				}
+			}
+		}
+
+		case TOGGLE_ANSWER: {
+			return {
+				...state,
+				isAnswerOpen: !state.isAnswerOpen
+			}
+		}
+
+		case NEXT_QUESTION: {
+			state.answerIndex = state.answerIndex + (CheckAnswers(state.question.answers) ? 1 : 0)
+			if (state.questionIndex === state.totalQuestions) {
 				return {
 					...state,
-					question: {
-						...state.question,
-						answers: answers
-					}
+					isResultOpen: true
 				}
-			}
-
-			case TOGGLE_ANSWER: {
+			} else {
 				return {
 					...state,
-					isAnswerOpen: !state.isAnswerOpen
+					questionIndex: state.questionIndex + 1,
+					isAnswerOpen: false,
+					question: nextQuestion()
 				}
 			}
+		}
 
-			case NEXT_QUESTION: {
-				state.answerIndex = state.answerIndex + (CheckAnswers(state.question.answers) ? 1 : 0)
-				if (state.questionIndex === state.totalQuestions) {
-					return {
-						...state,
-						isResultOpen: true
-					}
-				} else {
-					return {
-						...state,
-						questionIndex: state.questionIndex + 1,
-						isAnswerOpen: false,
-						question: nextQuestion()
-					}
-				}
-			}
+		case GO_TO_GROUP: {
+			window.open("https://t.me/technicalexcellenceru", "blank")
+			return state
+		}
 
-			case GO_TO_GROUP: {
-				window.open("https://t.me/technicalexcellenceru", "blank")
-				return state
-			}
-
-			default: {
-				return state
-			}
+		default: {
+			return state
+		}
 		}
 	}
 

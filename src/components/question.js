@@ -42,11 +42,11 @@ export default function Question() {
 			<div className="row">
 				<div className="col m-2 p-2 border-top border-light text-center">
 					<button className={`btn me-2 ${state.isAnswerOpen ? "btn-secondary" : "btn-primary"}`} type="button"
-							onClick={() => toggleAnswer()}>
+						onClick={() => toggleAnswer()}>
 						Проверить
 					</button>
 					<button className={`btn ms-2 ${state.isAnswerOpen ? "btn-primary" : "btn-secondary"}`} type="button"
-							onClick={() => nextQuestion()}>
+						onClick={() => nextQuestion()}>
 						Следующий
 					</button>
 				</div>
