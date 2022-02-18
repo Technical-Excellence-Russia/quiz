@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 14.x ]
+        node-version: [ 16.x ]
 
     steps:
       - uses: actions/checkout@v1
@@ -21,11 +21,17 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
 
-      - name: Generate
+      - name: Lint & test
         run: |
           npm i
+          npm run lint
           npm test
-          npm run generate
+        env:
+          CI: true
+
+      - name: Generate
+        run: |
+          npm run build
           npm run prod
         env:
           CI: true

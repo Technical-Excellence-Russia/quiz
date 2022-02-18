@@ -1,6 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
 
-
 $font-color: #d3d3d3;
 $border-color: #939393;
 $background-color: #2b2b2b;
@@ -9,39 +8,38 @@ html, body, {
   color: $font-color;
   background: $background-color;
   font-family: "Lucida Console", monospace;
+}
 
-  @media (min-width: 240px) {
-    font-size: 12px;
-  }
+code {
+  color: $font-color;
+}
 
-  @media (min-width: 400px) {
-    font-size: 14px;
-  }
+table th, td {
+  border: 1px solid $border-color;
+  padding: 1px 1px 1px 1px;
+}
 
-  @media (min-width: 768px) {
-    font-size: 16px;
-  }
+.border-none {
+  border-color: $background-color !important;
+}
 
-  @media (min-width: 1000px) {
-    font-size: 18px;
-  }
+.copyright {
+  font-size: 8pt;
+}
 
-  .container {
-    max-width: 800px;
-  }
+@media (min-width: 240px) {
+  font-size: 12px;
+}
 
-  code {
-    color: $font-color;
-  }
+@media (min-width: 400px) {
+  font-size: 14px;
+}
 
-  table th, td {
-    border: 1px solid $border-color;
-    padding: 1px 1px 1px 1px;
-  }
-;
+@media (min-width: 768px) {
+  font-size: 16px;
+}
 
-  .copyright {
-    font-size: 8pt;
-  }
+@media (min-width: 1000px) {
+  font-size: 18px;
 }
 

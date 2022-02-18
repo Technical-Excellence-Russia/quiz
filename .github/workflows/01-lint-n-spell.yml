@@ -9,7 +9,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 14.x ]
+        node-version: [ 16.x ]
 
     steps:
       - uses: actions/checkout@v1
@@ -19,6 +19,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
       - name: Lint markdown & spellcheck
-        run: npm run check
+        run: |
+          npm run lint-md
+          npm run spell
         env:
           CI: true

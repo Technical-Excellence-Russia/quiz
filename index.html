@@ -12,43 +12,6 @@
     <link href="index.css" rel="stylesheet">
 </head>
 <body>
-<div id="app" class="container justify-content-center">
-    <div class="row">
-        <div class="col-sm-12 text-center">
-            <h2 class="text-center">Technical Excellence Quiz</h2>
-        </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col-sm-12 text-left text-light fw-bold" v-html="question.text"></div>
-    </div>
-    <br/>
-    <div v-for="(answer, index) in question.answers"
-         :class="{ 'row': true, 'mt-2' : true, 'border': isAnswerOpen && answer.correct, 'border-success': isAnswerOpen && answer.correct}">
-        <div class="col-sm-11 text-left">
-            <input :id="index" v-model="answer.selected" type="checkbox"/>
-            <label :for="index" style="display: inline">{{ answer.text }}</label>
-        </div>
-    </div>
-    <br/>
-    <div v-if="isAnswerOpen" class="row mt-2">
-        <div class="col-sm-12 text-left border" v-html="answer">
-        </div>
-    </div>
-    <div class="row mt-2">
-        <div class="col-sm-12 justify-content-center align-content-center mt-1">
-            <button :class="{'btn': true,  'btn-primary' : !isAnswerOpen, 'btn-secondary' : isAnswerOpen}" type="button" @click="openAnswer">
-                Проверить
-            </button>
-            <button :class="{'btn': true,  'btn-primary' : isAnswerOpen, 'btn-secondary' : !isAnswerOpen}" type="button" @click="loadQuestion">
-                Следующий
-            </button>
-        </div>
-    </div>
-    <div class="row mt-5">
-        <div class="col-sm-12 text-right copyright">
-            <p class="copyright">Copyright &copy; <span>{{ currentYear }}</span> - Designed by Technical Excellence Ru</p>
-        </div>
-    </div>
-</div>
+<div id="app"></div>
 <script src="index.js"></script>
 </body>

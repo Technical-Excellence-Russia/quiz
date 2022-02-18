@@ -1,15 +1,15 @@
-const Question = require("../lib/question");
+const Question = require("../lib/question")
 
 describe("Question should", () => {
 
-    const questions = [new Object({}), new Object({})];
+	const questions = [new Object({}), new Object({})]
 
-    const question = new Question(questions);
+	const question = new Question(questions)
 
-    test("return random question", () => {
-        const result = question.getQuestion();
+	test("return random question", () => {
+		const result = question.getQuestion()
 
-        expect(result).not.toBeUndefined();
-    });
+		expect(result).not.toBeUndefined()
+	})
 
-});
+})

@@ -1,13 +1,41 @@
-import "bootstrap";
-import "./index.scss";
-import Question from "../lib/question";
-import Vue from "vue";
+import "bootstrap"
+import "./index.scss"
 
-const question = new Question();
+import React from "react"
+import ReactDOM from "react-dom"
 
-const params = new URL(window.location.href).searchParams;
+import QuestionFactory from "../lib/question"
+import App from "./app"
 
-new Vue({
+const questionFactory = new QuestionFactory()
+
+
+const currentYear = new Date().getFullYear()
+
+ReactDOM.render(
+	<div className="container">
+		<div className="row">
+			<div className="col-sm-12 text-center">
+				<h2 className="text-center">Technical Excellence Quiz</h2>
+			</div>
+		</div>
+		<App questionFactory={questionFactory}/>
+		<div className="row m-3">
+			<div className="col text-end">
+				<p className="copyright">&copy; {currentYear} Technical Excellence Ru</p>
+			</div>
+			<div className="col-sm-1">&nbsp;</div>
+		</div>
+	</div>
+	, document.getElementById("app"))
+//import Question from "../lib/question"
+
+
+//const question = new Question()
+
+//const params = new URL(window.location.href).searchParams
+
+/*new Vue({
     el: "#app",
     data: {
         currentYear: new Date().getFullYear().toString(),
@@ -58,4 +86,4 @@ new Vue({
     mounted() {
         this.loadQuestion(null);
     }
-});
+});*/
