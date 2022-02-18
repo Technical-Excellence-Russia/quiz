@@ -17,11 +17,11 @@ export default function App(props) {
 
 	const showAnswer = () => setState({...state, isAnswerOpen: true})
 	const nextAnswer = () => setState({
-			...state,
-			questionIndex: state.questionIndex < total ? state.questionIndex + 1 : initialState.questionIndex,
-			isAnswerOpen: false,
-			question: nextQuestion()
-		}
+		...state,
+		questionIndex: state.questionIndex < total ? state.questionIndex + 1 : initialState.questionIndex,
+		isAnswerOpen: false,
+		question: nextQuestion()
+	}
 	)
 
 	const answerTag = (
@@ -59,12 +59,12 @@ export default function App(props) {
 			<div className="row">
 				<div className="col m-2 p-2 border-top border-light text-center">
 					<button className={`btn me-2 ${state.isAnswerOpen ? "btn-secondary" : "btn-primary"}`} type="button"
-							onClick={() => showAnswer()}>Проверить
+						onClick={() => showAnswer()}>Проверить
 					</button>
 					{/*				</div>
 				<div className="col m-2 border-top border-light text-center">*/}
 					<button className={`btn ms-2 ${state.isAnswerOpen ? "btn-primary" : "btn-secondary"}`} type="button"
-							onClick={() => nextAnswer()}>Следующий
+						onClick={() => nextAnswer()}>Следующий
 					</button>
 				</div>
 			</div>
