@@ -1,0 +1,15 @@
+{
+  "name": "Technical Excellence Quiz",
+  "short_name": "Technical Excellence Quiz",
+  "theme_color": "#2b2b2b",
+  "background_color": "#2b2b2b",
+  "display": "standalone",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "./img/icon-256x256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ]
+}
