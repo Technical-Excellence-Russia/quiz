@@ -17,10 +17,10 @@ describe("Question should", () => {
 
 
 	beforeAll(() => component = renderer.create(
-			<Context.Provider value={[state, dispatch]}>
-				<Question/>
-			</Context.Provider>
-		)
+		<Context.Provider value={[state, dispatch]}>
+			<Question/>
+		</Context.Provider>
+	)
 	)
 
 
