@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Answer should equal to snapshot 1`] = `
+<div
+  className="row"
+>
+  <div
+    className="col m-2 p-2 text-left border"
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "Test",
+      }
+    }
+  />
+</div>
+`;
