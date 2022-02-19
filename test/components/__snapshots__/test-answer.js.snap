@@ -21,25 +21,3 @@ exports[`Answer should equal to snapshot 1`] = `
   </div>
 </div>
 `;
-
-exports[`Result should equal to snapshot 1`] = `
-<div
-  className="row p-2 m-2 border rounded border-none"
->
-  <div
-    className="col text-left form-check"
-  >
-    <input
-      checked={false}
-      className="form-check-input"
-      id="0"
-      onChange={[Function]}
-      type="checkbox"
-    />
-    <label
-      className="form-check-label"
-      htmlFor="0"
-    />
-  </div>
-</div>
-`;

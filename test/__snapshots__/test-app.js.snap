@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App should equal to snapshot when result is closed 1`] = `"Question"`;
+
+exports[`App should equal to snapshot when result is open 1`] = `"Result"`;
